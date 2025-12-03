@@ -1,0 +1,69 @@
+<form action="#" method="POST">
+    <label for="nombre">Tu Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required />
+    <br /><br />
+
+    <label for="email">Tu Email:</label>
+    <input type="email" id="email" name="_replyto" required />
+    <br /><br />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    <br /><br />
+
+    <button type="submit">Enviar Mensaje</button>
+</form>
+<style>
+    form {
+        display: block;
+        max-width: 600px; 
+        margin: 40px auto; 
+        padding: 40px; 
+        background-color: #ffffff; /
+        border-radius: 50%; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+        border: 1px solid #e0e0e0; 
+    }
+    label {
+        display: block;
+        border-radius: 50px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-weight: 600; 
+        color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; 
+        padding: 12px;
+        border: 1px solid #ccc; 
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    input:focus,
+    textarea:focus {
+        border-color: #007bff; 
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
+     
+    }
+    button[type="submit"] {
+        display: block;
+        width: 100%; 
+        padding: 15px 20px;
+        margin-top: 30px; 
+        background-color: #007bff; 
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    button[type="submit"]:active {
+        transform: translateY(1px); 
+    }
+</style>
